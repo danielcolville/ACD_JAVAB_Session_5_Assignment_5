@@ -154,10 +154,8 @@ public class MatrixCalc {
 	public static int[][] transpose(int[][] m1) {
 		int [][] m2=new int[m1[0].length][m1.length];
 		for(int i=0;i<m1.length;i++) {
-			for(int j=0;j<m1[i].length;j++) {
-				
+			for(int j=0;j<m1[i].length;j++) {	
 				m2[i][j]=m1[j][i];
-				//System.out.print(m2[i][j]+" "+m1[i][j]);
 			}
 		}
 		return m2;
