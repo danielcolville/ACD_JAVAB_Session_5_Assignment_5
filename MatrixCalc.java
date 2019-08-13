@@ -18,7 +18,7 @@ public class MatrixCalc {
 				m1=enterMat(sc);
 				for(int[] si:m1) {
 					for(int i:si) {
-						System.out.print(i);
+						System.out.print(i+",");
 					}
 					System.out.println();
 				}
@@ -27,7 +27,7 @@ public class MatrixCalc {
 				m2=enterMat(sc);
 				for(int[] si:m2) {
 					for(int i:si) {
-						System.out.print(i);
+						System.out.print(i+",");
 					}
 					System.out.println();
 				}
@@ -37,7 +37,7 @@ public class MatrixCalc {
 				res=mAdd(m1,m2);
 				for(int[] si:res) {
 					for(int i:si) {
-						System.out.print(i);
+						System.out.print(i+",");
 					}
 					System.out.println();
 				}
@@ -53,7 +53,7 @@ public class MatrixCalc {
 				}
 				for(int[] si:res) {
 					for(int i:si) {
-						System.out.print(i);
+						System.out.print(i+",");
 					}
 					System.out.println();
 				}
@@ -65,7 +65,7 @@ public class MatrixCalc {
 					res=transpose(m1);
 					for(int[] si:res) {
 						for(int i:si) {
-							System.out.print(i);
+							System.out.print(i+",");
 						}
 						System.out.println();
 					}
@@ -74,7 +74,7 @@ public class MatrixCalc {
 					res=transpose(m2);
 					for(int[] si:res) {
 						for(int i:si) {
-							System.out.print(i);
+							System.out.print(i+",");
 						}
 						System.out.println();
 					}
@@ -104,19 +104,6 @@ public class MatrixCalc {
 				System.out.println(" Tranpose (t) to tranpose a matrix\n Multiply (m) to matrix multiply\n Quit (q) to exit");
 			}
 		}while(true);
-		/*System.out.println("Enter number of rows matrix 1");
-		int rows=sc.nextInt();
-		System.out.println("Enter number of cols matrix 1");
-		int cols=sc.nextInt();
-		int[][] m1=new int[rows][cols];
-		for(int i=0;i<rows;i++) {
-			for(int j=0;j<cols;j++) {
-				System.out.print("Enter next number");
-				m1[i][j]=sc.nextInt();
-			}
-		}*/
-		
-	
 		
 		
 	}
@@ -170,7 +157,7 @@ public class MatrixCalc {
 			for(int j=0;j<m1[i].length;j++) {
 				
 				m2[i][j]=m1[j][i];
-				System.out.print(m2[i][j]+" "+m1[i][j]);
+				//System.out.print(m2[i][j]+" "+m1[i][j]);
 			}
 		}
 		return m2;
